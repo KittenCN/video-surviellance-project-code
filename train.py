@@ -9,8 +9,8 @@ import subprocess
 # Constants
 train_path = './train'
 fps = 5
-video_path = './Avenue_Dataset/Avenue Dataset/training_videos'
-vol_path = './Avenue_Dataset/Avenue Dataset/training_vol'
+video_path = './Avenue_Dataset/Avenue_Dataset/training_videos'
+vol_path = './Avenue_Dataset/Avenue_Dataset/training_vol'
 
 
 # Function to store images in array
