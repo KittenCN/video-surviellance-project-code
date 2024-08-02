@@ -21,7 +21,6 @@ def store_inarray(image_path, store_image):
     gray = 0.2989 * image[:, :, 0] + 0.5870 * image[:, :, 1] + 0.1140 * image[:, :, 2]
     store_image.append(gray)
 
-
 # Process training_videos dataset
 def process_videos(video_path, train_images_path, fps):
     videos = os.listdir(video_path)
@@ -68,8 +67,9 @@ os.makedirs(train_images_path, exist_ok=True)
 
 # Process both datasets
 store_image = []
-process_videos(video_path, train_images_path, store_image)
-print(process_videos(video_path, train_images_path, store_image))
+fps = 0.2
+process_videos(video_path, train_images_path, fps)
+print(process_videos(video_path, train_images_path, fps))
 process_vol(vol_path, store_image)
 print(process_vol(vol_path, store_image))
 # Convert to numpy array and preprocess
